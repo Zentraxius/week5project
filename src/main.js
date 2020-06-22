@@ -1,13 +1,9 @@
-// import { pingPong } from './ping-pong'; // import the export
-// import './styles.css';
+// import { pingPong } from './businesslogic'; // import the export function from businesslogic.js
+// import './styles.css'; // brings over styles.css
 
 // $(document).ready(function() {
-//   $('#ping-pong-form').submit(function(event) {
-//     event.preventDefault();
-//     const goal = $('#goal').val();
-//     const output = pingPong(goal);
-//     output.forEach(function(element) {
-//       $('#solution').append("<li>" + element + "</li>");
+//   $('insertformandclassorid').submit(function(event) {
+
+
 //     });
 //   });
-// });
