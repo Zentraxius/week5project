@@ -1,7 +1,7 @@
 const path = require('path');
-const HtmlWebpackPlugin=require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // REE
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin'); // REE2
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin'); // 
+const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // 
 
 module.exports = {
   entry: './src/main.js',
@@ -14,10 +14,10 @@ module.exports = {
     contentBase: './dist'
   },
   plugins: [
-    new UglifyJsPlugin({ sourceMap: true }), // REE2
-    new CleanWebpackPlugin(), // REE
+    new UglifyJsPlugin({ sourceMap: true }), // 
+    new CleanWebpackPlugin(), // 
     new HtmlWebpackPlugin({
-      title: 'Ping Pong',
+      title: 'project-name',
       template: './src/index.html',
       inject: 'body'
     })
