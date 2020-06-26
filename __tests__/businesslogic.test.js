@@ -13,19 +13,20 @@ describe("Age", () => {
     expect(reuseableAge.expectancy).toEqual(10000);
   });
 
-  test("Should determine age on Mars.", () => {
-    expect(reuseableAge.earthToMars()).toEqual([47, 18800]);
+  test("Should determine age on Mars, their expected lifespan, and their remaining lifespan. If remaining lifespan is negative, that is how much they have exceeded their lifespan expectancy", () => {
+    expect(reuseableAge.earthToMars()).toEqual([47, 18800, 18753]);
+    expect(reuseableAge.earthToMars([0])).toEqual([47]);
   });
 
-  test("Should determine age on Venus.", () => {
+  test("Should determine age on Venus, their expected lifespan, and their remaining lifespan. If remaining lifespan is negative, that is how much they have exceeded their lifespan expectancy", () => {
     expect(reuseableAge.earthToVenus()).toEqual([16, 6200]);
   });
 
-  test("Should determine age on Jupiter.", () => {
+  test("Should determine age on Jupiter, their expected lifespan, and their remaining lifespan. If remaining lifespan is negative, that is how much they have exceeded their lifespan expectancy", () => {
     expect(reuseableAge.earthToJupiter()).toEqual([297, 118600]);
   });
 
-  test("Should determine age on Mercury.", () => {
+  test("Should determine age on Mercury, their expected lifespan, and their remaining lifespan. If remaining lifespan is negative, that is how much they have exceeded their lifespan expectancy", () => {
     expect(reuseableAge.earthToMercury()).toEqual([6, 2400]);
   });
 });

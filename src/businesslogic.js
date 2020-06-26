@@ -8,6 +8,7 @@ export class Age {
     let marsResult = [];
     marsResult.push(Math.round(this.age * 1.88));
     marsResult.push(Math.round(this.expectancy * 1.88));
+    marsResult.push(marsResult[1] - marsResult[0])
     return marsResult;
   }
 
