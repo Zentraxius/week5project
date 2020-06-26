@@ -18,7 +18,7 @@ describe("Age", () => {
   });
 
   test("Should determine age on Venus.", () => {
-    expect(reuseableAge.earthToVenus()).toEqual(16);
+    expect(reuseableAge.earthToVenus()).toEqual([16, 6200]);
   });
 
   test("Should determine age on Jupiter.", () => {

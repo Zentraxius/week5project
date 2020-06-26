@@ -5,26 +5,28 @@ export class Age {
   }
 
   earthToMars() {
-    let marsResult = []
-    marsResult.push(Math.round(this.age * 1.88))
-    marsResult.push(Math.round(this.expectancy * 1.88))
-    return marsResult
+    let marsResult = [];
+    marsResult.push(Math.round(this.age * 1.88));
+    marsResult.push(Math.round(this.expectancy * 1.88));
+    return marsResult;
   }
 
   earthToVenus() {
-    let venusResult = []
-  venusResult.push(Math.round(this.age * 0.62))
-  
-  return venusResult
+    let venusResult = [];
+    venusResult.push(Math.round(this.age * 0.62));
+    venusResult.push(Math.round(this.expectancy * 0.62));
+    return venusResult;
   }
 
   earthToJupiter() {
-    let jupiterAge = Math.round(this.age * 11.86)
-    return jupiterAge
+    let jupiterResult = []
+    jupiterResult.push(Math.round(this.age * 11.86))
+    jupiterResult.push(Math.round(this.expectancy * 11.86))
+    return jupiterResult;
   }
 
   earthToMercury() {
-    let mercuryAge = Math.round(this.age * 0.24)
+    let mercuryAge = Math.round(this.age * 0.24);
     return mercuryAge;
   }
 }
