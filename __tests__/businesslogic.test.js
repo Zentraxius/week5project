@@ -16,12 +16,12 @@ describe("Age", () => {
   test("Should determine age on Mars, their expected lifespan, and their remaining lifespan. If lifespan is exceeded, indicate as such", () => {
     expect(reuseableAge.earthToMars()).toEqual([47, 18800, 18753]); // Array with all values
 
-    expect("You are " + reuseableAge.earthToMars()[0] + " years old on Mars!").toEqual("You are " + 47 + " years old on Mars!");  // This is your age on Mars
+    expect(`You are ${reuseableAge.earthToMars()[0]} years old on Mars!`).toEqual(`You are 47 years old on Mars!`);  // This is your age on Mars
 
-    expect("You are expected to live for a total of " + reuseableAge.earthToMars()[1] + " years!").toEqual("You are expected to live for a total of " + 18800 + " years!")
+    expect(`You are expected to live for a total of ${reuseableAge.earthToMars()[1]} years!`).toEqual("You are expected to live for a total of " + 18800 + " years!")
 
   if (reuseableAge.earthToMars()[2] < 0) {
-    expect("You have exceeded your life expectancy by " + reuseableAge.earthToMars()[2] + " years!").toEqual("You have exceeded your life expectancy by " + reuseableAge.earthToMars()[2] + " years!")
+    expect(`You have exceeded your life expectancy by ${reuseableAge.earthToMars()[2]} years!`).toEqual("You have exceeded your life expectancy by " + reuseableAge.earthToMars()[2] + " years!")
   } else {
 
     expect("You have " + reuseableAge.earthToMars()[2] + " more years of life expectancy to enjoy!").toEqual("You have " + 18753 + " more years of life expectancy to enjoy!")
