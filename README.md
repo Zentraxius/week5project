@@ -22,7 +22,7 @@ User inputs age (Will use 25 for testing purposes, all rounded to nearest whole 
 4. On Jupiter you are age \* 11.86
 5. On Mercury you are age \* .24
 
-U.S average life expectancy is 78.6, will round up to 79 for convenience.
+**U.S average life expectancy is 78.6, will use 10000 as expectancy as we are estimating the life of space elves**
 
 If user inputs their age, they will also get their life expectancy returned (on Earth, age 41, life expectancy 79, estimated remainder 38)
 

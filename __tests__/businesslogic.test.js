@@ -22,10 +22,10 @@ describe("Age", () => {
   });
 
   test("Should determine age on Jupiter.", () => {
-    expect(reuseableAge.earthToJupiter()).toEqual(297);
+    expect(reuseableAge.earthToJupiter()).toEqual([297, 118600]);
   });
 
   test("Should determine age on Mercury.", () => {
-    expect(reuseableAge.earthToMercury()).toEqual(6);
+    expect(reuseableAge.earthToMercury()).toEqual([6, 2400]);
   });
 });
