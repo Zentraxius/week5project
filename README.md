@@ -14,7 +14,7 @@ Tells the user how old they would be on various planets such as Mercury, Venus, 
 
 ## Specifications (Specs)
 
-User inputs age (Will use 25 for testing purposes)
+User inputs age (Will use 25 for testing purposes, all rounded to nearest whole number)
 On Earth you are age \* 1.00
 On Mars you are age \* 1.88
 on Venus you are age \* 0.62

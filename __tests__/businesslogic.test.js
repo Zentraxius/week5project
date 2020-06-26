@@ -1,24 +1,31 @@
 // Use import to bring stuff over and test
-import { Age } from './../src/businesslogic.js';
+import { Age } from "./../src/businesslogic.js";
 
-
-describe('Age', () => {
-  let reuseableAge = new Age(25, 10000)
+describe("Age", () => {
+  let reuseableAge = new Age(25, 10000);
 
   beforeEach(() => {
-  reuseableAge = new Age(25, 10000)
+    reuseableAge = new Age(25, 10000);
   });
 
-  test('should determine age on earth', () => {
-  expect(reuseableAge.age).toEqual(25);
-  expect(reuseableAge.expectancy).toEqual(10000);
+  test("should determine age on earth", () => {
+    expect(reuseableAge.age).toEqual(25);
+    expect(reuseableAge.expectancy).toEqual(10000);
   });
 
-  test('should determine age on mars as base age times 0.24', () => {
-  expect(reuseableAge.earthToMars()).toEqual(47);
+  test("should determine age on mars as base age times 0.24", () => {
+    expect(reuseableAge.earthToMars()).toEqual(47);
   });
 
-  test('should determine age on mercury', () => {
+  test("should determine age on venus", () => {
+    expect(reuseableAge.earthToVenus()).toEqual(16);
+  });
+
+  test("should determine age on jupiter", () => {
+    expect(reuseableAge.earthToJupiter()).toEqual(1);
+  });
+
+  test("should determine age on mercury", () => {
     expect(reuseableAge.earthToMercury()).toEqual(6);
   });
 });
