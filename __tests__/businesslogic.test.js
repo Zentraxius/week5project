@@ -13,7 +13,7 @@ describe("Age", () => {
     expect(reuseableAge.expectancy).toEqual(10000);
   });
 
-  test("Should determine age on Mars, their expected lifespan, and their remaining lifespan. If remaining lifespan is negative, that is how much they have exceeded their lifespan expectancy", () => {
+  test("Should determine age on Mars, their expected lifespan, and their remaining lifespan. If lifespan is exceeded, indicate as such", () => {
     expect(reuseableAge.earthToMars()).toEqual([47, 18800, 18753]); // Array with all values
 
     expect("You are " + reuseableAge.earthToMars()[0] + " years old on Mars!").toEqual("You are " + 47 + " years old on Mars!");  // This is your age on Mars
@@ -29,15 +29,15 @@ describe("Age", () => {
 
   });
 
-  test("Should determine age on Venus, their expected lifespan, and their remaining lifespan. If remaining lifespan is negative, that is how much they have exceeded their lifespan expectancy", () => {
-    expect(reuseableAge.earthToVenus()).toEqual([16, 6200]);
+  test("Should determine age on Venus, their expected lifespan, and their remaining lifespan. If lifespan is exceeded, indicate as such", () => {
+    expect(reuseableAge.earthToVenus()).toEqual([16, 6200, 6184]);
   });
 
-  test("Should determine age on Jupiter, their expected lifespan, and their remaining lifespan. If remaining lifespan is negative, that is how much they have exceeded their lifespan expectancy", () => {
-    expect(reuseableAge.earthToJupiter()).toEqual([297, 118600]);
+  test("Should determine age on Jupiter, their expected lifespan, and their remaining lifespan. If lifespan is exceeded, indicate as such", () => {
+    expect(reuseableAge.earthToJupiter()).toEqual([297, 118600, 118303]);
   });
 
-  test("Should determine age on Mercury, their expected lifespan, and their remaining lifespan. If remaining lifespan is negative, that is how much they have exceeded their lifespan expectancy", () => {
-    expect(reuseableAge.earthToMercury()).toEqual([6, 2400]);
+  test("Should determine age on Mercury, their expected lifespan, and their remaining lifespan. If lifespan is exceeded, indicate as such", () => {
+    expect(reuseableAge.earthToMercury()).toEqual([6, 2400, 2394]);
   });
 });
