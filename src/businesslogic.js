@@ -26,7 +26,9 @@ export class Age {
   }
 
   earthToMercury() {
-    let mercuryAge = Math.round(this.age * 0.24);
-    return mercuryAge;
+    let mercuryResult = []
+    mercuryResult.push(Math.round(this.age * 0.24))
+    mercuryResult.push(Math.round(this.expectancy * 0.24))
+    return mercuryResult;
   }
 }
