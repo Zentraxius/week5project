@@ -12,8 +12,10 @@ export class Age {
   }
 
   earthToVenus() {
-  let venusAge = Math.round(this.age * 0.62)
-  return venusAge
+    let venusResult = []
+  venusResult.push(Math.round(this.age * 0.62))
+  
+  return venusResult
   }
 
   earthToJupiter() {
