@@ -8,24 +8,24 @@ describe("Age", () => {
     reuseableAge = new Age(25, 10000);
   });
 
-  test("should determine age on earth", () => {
+  test("Should determine age on Earth.", () => {
     expect(reuseableAge.age).toEqual(25);
     expect(reuseableAge.expectancy).toEqual(10000);
   });
 
-  test("should determine age on mars as base age times 0.24", () => {
-    expect(reuseableAge.earthToMars()).toEqual(47);
+  test("Should determine age on Mars.", () => {
+    expect(reuseableAge.earthToMars()).toEqual([47, 18800]);
   });
 
-  test("should determine age on venus", () => {
+  test("Should determine age on Venus.", () => {
     expect(reuseableAge.earthToVenus()).toEqual(16);
   });
 
-  test("should determine age on jupiter", () => {
-    expect(reuseableAge.earthToJupiter()).toEqual(1);
+  test("Should determine age on Jupiter.", () => {
+    expect(reuseableAge.earthToJupiter()).toEqual(297);
   });
 
-  test("should determine age on mercury", () => {
+  test("Should determine age on Mercury.", () => {
     expect(reuseableAge.earthToMercury()).toEqual(6);
   });
 });

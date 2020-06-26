@@ -5,8 +5,10 @@ export class Age {
   }
 
   earthToMars() {
-    let marsAge = Math.round(this.age * 1.88);
-    return marsAge;
+    let marsResult = []
+    marsResult.push(Math.round(this.age * 1.88))
+    marsResult.push(Math.round(this.expectancy * 1.88))
+    return marsResult
   }
 
   earthToVenus() {

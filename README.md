@@ -15,11 +15,12 @@ Tells the user how old they would be on various planets such as Mercury, Venus, 
 ## Specifications (Specs)
 
 User inputs age (Will use 25 for testing purposes, all rounded to nearest whole number)
-On Earth you are age \* 1.00
-On Mars you are age \* 1.88
-on Venus you are age \* 0.62
-on Jupiter you are age \* 11.86
-on Mercury you are age \* .24
+
+1. On Earth you are age \* 1.00
+2. On Mars you are age \* 1.88
+3. On Venus you are age \* 0.62
+4. On Jupiter you are age \* 11.86
+5. On Mercury you are age \* .24
 
 U.S average life expectancy is 78.6, will round up to 79 for convenience.
 
