@@ -4,10 +4,13 @@ export class Age {
     this.expectancy = expectancy;
   }
   earthToMars() {
-    let marsAge = this.age * 0.24;
+    let marsAge = Math.round(this.age * 1.88);
     return marsAge;
   }
   earthToVenus() {}
   earthToJupiter() {}
-  earthToMercury() {}
+  earthToMercury() {
+    let mercuryAge = Math.round(this.age * 0.24)
+    return mercuryAge;
+  }
 }
