@@ -3,7 +3,17 @@ export class Age {
   this.age = age;
   this.expectancy = expectancy;
 }
-galacticYear() {
+earthToMars() {
+this.age * 0.24
+return this.age
+}
+earthToVenus() {
+
+}
+earthToJupiter() {
+
+}
+earthToMercury() {
 
 }
 }
