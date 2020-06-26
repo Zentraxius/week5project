@@ -14,7 +14,7 @@ describe('Age', () => {
   expect(reuseableAge.expectancy).toEqual(79);
   });
 
-  test('should determine age on mars as base age times 0.24' () => {
-  expect(reuseableAge.earthToMars()).toEqual("number");
+  test('should determine age on mars as base age times 0.24', () => {
+  expect(reuseableAge.earthToMars()).toEqual(6);
   });
-});
+})
