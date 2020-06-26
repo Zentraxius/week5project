@@ -14,8 +14,8 @@ describe("Age", () => {
   });
 
   test("Should determine age on Mars, their expected lifespan, and their remaining lifespan. If remaining lifespan is negative, that is how much they have exceeded their lifespan expectancy", () => {
-    expect(reuseableAge.earthToMars()).toEqual([47, 18800, 18753]);
-    expect(reuseableAge.earthToMars([0])).toEqual([47]);
+    expect(reuseableAge.earthToMars()).toEqual([47, 18800, 18753]); // Array with all values
+    expect(reuseableAge.earthToMars()[0]).toEqual(47);  // This is your age on Mars
   });
 
   test("Should determine age on Venus, their expected lifespan, and their remaining lifespan. If remaining lifespan is negative, that is how much they have exceeded their lifespan expectancy", () => {
