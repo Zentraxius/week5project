@@ -7,17 +7,34 @@
 </head>
 
 <body>
-  <div class="card">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="https://images.unsplash.com/photo-1534278931827-8a259344abe7?ixlib=rb-1.2.1&w=1000&q=80" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This should be a working card class!
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+  <form id="userYearInput">
+    <div class="form-group">
+
+      <div class="sidebar">
+        <h2>Life Expectancy in Earth Years:</h2>
+        <ul>
+          <li>Human: 79</li>
+          <li>Elf: 1200</li>
+          <li>Space Elf: 10000</li>
+          <li>Orc: 60</li>
+          <li>Dwarf: 400</li>
+        </ul>
       </div>
+
+      <label for="userYear">Input your age in Earth Years</label>
+      <br>
+      <input type="number" required class="userYear">
+      <br>
+      <br>
+      <label for="userExpectancy">Input your life expactancy</label>
+      <br>
+      <input type="number" required class="userExpectancy">
+      <br>
+      <br>
+      <button type="submit">Submit!</button>
     </div>
-  </div>
+  </form>
+  <p class="result"></p>
 </body>
 
 </html>

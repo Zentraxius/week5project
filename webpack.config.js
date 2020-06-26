@@ -11,7 +11,8 @@ module.exports = {
   },
   devtool: 'eval-source-map',
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
+    liveReload: false
   },
   plugins: [
     new UglifyJsPlugin({ sourceMap: true }), // 

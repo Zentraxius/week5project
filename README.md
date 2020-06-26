@@ -39,6 +39,8 @@ If user age is superior to life expectancy they will get a message detailing tha
 
 ## Known Bugs
 
+UI and Index not fully implemented or supported due to known bug regarding dev-server with webpack, resulting in being unable to test any of the code or functions outside of business logic.
+
 ## Support and contact details
 
 For support please contact clanalia55@gmail.com
