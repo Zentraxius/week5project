@@ -2,15 +2,14 @@ export class Age {
   constructor(age, expectancy) {
     this.age = age;
     this.expectancy = expectancy;
+    this.difference = expectancy - age;
   }
 // Each function should return an Array. [age, expectancy, difference].
   earthToMars() {
     this.age = (Math.round(this.age / 1.88));
-    // let marsResult = [];
-    // marsResult.push(Math.round(this.age / 1.88));
-    // marsResult.push(Math.round(this.expectancy / 1.88));
-    // marsResult.push(marsResult[1] - marsResult[0]); 
-    // return marsResult;
+    this.expectancy = (Math.round(this.expectancy / 1.88));
+    this.difference = this.expectancy - this.age;
+
   }
 
   earthToVenus() {
