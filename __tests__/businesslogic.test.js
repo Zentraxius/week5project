@@ -1,4 +1,3 @@
-// Use import to bring stuff over and test
 import { Age } from "./../src/businesslogic.js";
 
 describe("Age", () => {
@@ -16,11 +15,11 @@ describe("Age", () => {
   test("Should determine age, expectancy, and difference between them on Mars", () => {
     expect(reuseableAge.earthToMars()).toEqual([13, 5319, 5306]); // Array with all values
 
-    expect($reuseableAge.earthToMars()[0]).toEqual(47);  // This is your age on Mars
+    expect(reuseableAge.earthToMars()[0]).toEqual(13);  // This is your age on Mars
 
-    expect($reuseableAge.earthToMars()[1]).toEqual(18800); // This is your expectancy on Mars
+    expect(reuseableAge.earthToMars()[1]).toEqual(5319); // This is your expectancy on Mars
 
-    expect($reuseableAge.earthToMars()[2]).toEqual(50); // This is the difference between your expected lifespan and your current age, on that planet.
+    expect(reuseableAge.earthToMars()[2]).toEqual(5306); // This is the difference between your expected lifespan and your current age, on that planet.
   });
 
   // test("Should determine age, expectancy, and difference between them on Venus", () => {
