@@ -14,7 +14,7 @@ describe("Age", () => {
   });
 
   test("Should determine age, expectancy, and difference between them on Mars", () => {
-    expect(reuseableAge.earthToMars()).toEqual([47, 18800, 18753]); // Array with all values
+    expect(reuseableAge.earthToMars()).toEqual([13, 5319, 5306]); // Array with all values
 
     expect($reuseableAge.earthToMars()[0]).toEqual(47);  // This is your age on Mars
 

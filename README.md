@@ -21,6 +21,15 @@ User inputs age (Will use 25 for testing purposes, all rounded to nearest whole 
 3. On Venus you are age / 0.62
 4. On Jupiter you are age / 11.86
 5. On Mercury you are age / .24
+6. When steps 1-5 are complete, also shows your expected lifespan on that planet (Based off made up lifespan of 10000)
+7. When step 6 is complete, shows difference between current lifespan and expected lifespan
+
+**Example**
+|Behavior|Input|OutputAge|OutputExpectancy|OutputDifference|
+
+Mars|25|13|5319|5306|
+Here we can see the expected results of a 25 year old inputting their age.
+On Mars, a 25 year old with a life expectancy of 10,000 years would get the results of 13(current age), 5319(expected age), and 5306(difference between the 2)
 
 **U.S average life expectancy is 78.6, will use 10000 as expectancy as we are estimating the life of space elves**
 
