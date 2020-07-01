@@ -4,20 +4,17 @@ export class Age {
     this.expectancy = expectancy;
     this.difference = expectancy - age;
   }
-// Each function should return an Array. [age, expectancy, difference].
+// Each function should modify age based on that planets value in years
   earthToMars() {
     this.age = (Math.round(this.age / 1.88));
     this.expectancy = (Math.round(this.expectancy / 1.88));
     this.difference = this.expectancy - this.age;
-
   }
 
   earthToVenus() {
-    let venusResult = [];
-    venusResult.push(Math.round(this.age / 0.62));
-    venusResult.push(Math.round(this.expectancy / 0.62));
-    venusResult.push(venusResult[1] - venusResult[0]);
-    return venusResult;
+    this.age = (Math.round(this.age / 0.62));
+    this.expectancy = (Math.round(this.expectancy / 0.62));
+    this.difference = this.expectancy - this.age;
   }
 
   earthToJupiter() {
