@@ -5,11 +5,12 @@ export class Age {
   }
 // Each function should return an Array. [age, expectancy, difference].
   earthToMars() {
-    let marsResult = [];
-    marsResult.push(Math.round(this.age / 1.88));
-    marsResult.push(Math.round(this.expectancy / 1.88));
-    marsResult.push(marsResult[1] - marsResult[0]); 
-    return marsResult;
+    this.age = (Math.round(this.age / 1.88));
+    // let marsResult = [];
+    // marsResult.push(Math.round(this.age / 1.88));
+    // marsResult.push(Math.round(this.expectancy / 1.88));
+    // marsResult.push(marsResult[1] - marsResult[0]); 
+    // return marsResult;
   }
 
   earthToVenus() {
