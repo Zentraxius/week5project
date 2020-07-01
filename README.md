@@ -16,11 +16,11 @@ Tells the user how old they would be on various planets such as Mercury, Venus, 
 
 User inputs age (Will use 25 for testing purposes, all rounded to nearest whole number)
 
-1. On Earth you are age \* 1.00
-2. On Mars you are age \* 1.88
-3. On Venus you are age \* 0.62
-4. On Jupiter you are age \* 11.86
-5. On Mercury you are age \* .24
+1. On Earth you are age / 1.00
+2. On Mars you are age / 1.88
+3. On Venus you are age / 0.62
+4. On Jupiter you are age / 11.86
+5. On Mercury you are age / .24
 
 **U.S average life expectancy is 78.6, will use 10000 as expectancy as we are estimating the life of space elves**
 
@@ -35,7 +35,9 @@ If user age is superior to life expectancy they will get a message detailing tha
 3. Click "Clone or download v" Download Zip
 4. Open .zip with program of choice (Winrar/7zip confirmed working)
 5. Extract folder to location of choice(such as desktop)
-6. Run index.html with browser of choice, confirmed working on Firefox and Chrome.
+6. Open with Visual Studio Code, and open terminal
+7. Run "npm install" without quotes, and then "npm build" without quotes, when npm install has finished.
+8. Run index.html with browser of choice, confirmed working on Firefox and Chrome.
 
 ## Known Bugs
 
