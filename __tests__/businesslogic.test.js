@@ -1,51 +1,46 @@
 import { Age } from "./../src/businesslogic.js";
 
 describe("Age", () => {
-  let reuseableAge = new Age(25, 10000);
+  let reuseableAgeYoung = new Age(25, 10000);
 
   beforeEach(() => {
-    reuseableAge = new Age(25, 10000);
+    reuseableAgeYoung = new Age(25, 10000);
+    reuseableAgeOld = new Age(25000, 10000);
   });
 
   test("Should determine age on Earth.", () => {
-    expect(reuseableAge.age).toEqual(25);
-    expect(reuseableAge.expectancy).toEqual(10000);
+    expect(reuseableAgeYoung.age).toEqual(25);
+    expect(reuseableAgeYoung.expectancy).toEqual(10000);
   });
 
   test("Should determine age, expectancy, and difference between them on Mars", () => {
-    reuseableAge.earthToMars();
-    expect(reuseableAge.age).toEqual(13);
-    expect(reuseableAge.expectancy).toEqual(5319);
-    expect(reuseableAge.difference).toEqual(5306);
+    reuseableAgeYoung.earthToMars();
+    expect(reuseableAgeYoung.age).toEqual(13);
+    expect(reuseableAgeYoung.expectancy).toEqual(5319);
+    expect(reuseableAgeYoung.difference).toEqual(5306);
+    //
   });
 
   test("Should determine age, expectancy, and difference between them on Venus", () => {
-    reuseableAge.earthToVenus();
-    expect(reuseableAge.age).toEqual(40);
-    expect(reuseableAge.expectancy).toEqual(16129);
-    expect(reuseableAge.difference).toEqual(16089);
+    reuseableAgeYoung.earthToVenus();
+    expect(reuseableAgeYoung.age).toEqual(40);
+    expect(reuseableAgeYoung.expectancy).toEqual(16129);
+    expect(reuseableAgeYoung.difference).toEqual(16089);
+    //
   });
 
   test("Should determine age, expectancy, and difference between them on Jupiter", () => {
-    reuseableAge.earthToJupiter();
-    expect(reuseableAge.age).toEqual(40);
-    expect(reuseableAge.expectancy).toEqual(16129);
-    expect(reuseableAge.difference).toEqual(16089);
+    reuseableAgeYoung.earthToJupiter();
+    expect(reuseableAgeYoung.age).toEqual(2);
+    expect(reuseableAgeYoung.expectancy).toEqual(843);
+    expect(reuseableAgeYoung.difference).toEqual(841);
+    //
   });
 
-  // test("Should determine age, expectancy, and difference between them on Mercury", () => {
-  //   expect(reuseableAge.earthToMercury()).toEqual([6, 2400, 2394]);
-
-  //   expect("You are " + reuseableAge.earthToMercury()[0] + " years old on Mercury!").toEqual("You are " + 6 + " years old on Mercury!");
-
-  //   expect(reuseableAge.earthToMercury()[1]).toEqual(reuseableAge.earthToMercury()[1])
-
-  // if (reuseableAge.earthToMercury()[2] < 0) {
-  //   expect(reuseableAge.earthToMercury()[2]).toEqual(reuseableAge.earthToMercury()[2])
-  // } else {
-
-  //   expect("You have " + reuseableAge.earthToMercury()[2] + " more years of life expectancy to enjoy!").toEqual("You have " + Math.abs(reuseableAge.earthToMercury()[2]) + " more years of life expectancy to enjoy!")
-  // }
-
-  // });
+  test("Should determine age, expectancy, and difference between them on Mercury", () => {
+    reuseableAgeYoung.earthToMercury;
+    expect(reuseableAgeYoung.age).toEqual(2);
+    expect(reuseableAgeYoung.expectancy).toEqual(843);
+    expect(reuseableAgeYoung.difference).toEqual(841);
+  });
 });

@@ -24,10 +24,8 @@ export class Age {
   }
 
   earthToMercury() {
-    let mercuryResult = [];
-    mercuryResult.push(Math.round(this.age / 0.24));
-    mercuryResult.push(Math.round(this.expectancy / 0.24));
-    mercuryResult.push(mercuryResult[1] - mercuryResult[0]);
-    return mercuryResult;
+    this.age = (Math.round(this.age / 0.24));
+    this.expectancy = (Math.round(this.expectancy / 0.24));
+    this.difference = this.expectancy - this.age;
   }
 }
