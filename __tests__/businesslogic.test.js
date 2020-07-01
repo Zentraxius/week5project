@@ -26,21 +26,12 @@ describe("Age", () => {
     expect(reuseableAge.difference).toEqual(16089);
   });
 
-  // test("Should determine age, expectancy, and difference between them on Jupiter", () => {
-  //   expect(reuseableAge.earthToJupiter()).toEqual([297, 118600, 118303]);
-
-  //   expect("You are " + reuseableAge.earthToJupiter()[0] + " years old on Jupiter!").toEqual("You are " + 297 + " years old on Jupiter!");
-
-  //   expect(reuseableAge.earthToJupiter()[1]).toEqual(reuseableAge.earthToJupiter()[1])
-
-  // if (reuseableAge.earthToJupiter()[2] < 0) {
-  //   expect(reuseableAge.earthToJupiter()[2]).toEqual(reuseableAge.earthToJupiter()[2])
-  // } else {
-
-  //   expect("You have " + reuseableAge.earthToJupiter()[2] + " more years of life expectancy to enjoy!").toEqual("You have " + Math.abs(reuseableAge.earthToJupiter()[2]) + " more years of life expectancy to enjoy!")
-  // }
-
-  // });
+  test("Should determine age, expectancy, and difference between them on Jupiter", () => {
+    reuseableAge.earthToVenus();
+    expect(reuseableAge.age).toEqual(40);
+    expect(reuseableAge.expectancy).toEqual(16129);
+    expect(reuseableAge.difference).toEqual(16089);
+  });
 
   // test("Should determine age, expectancy, and difference between them on Mercury", () => {
   //   expect(reuseableAge.earthToMercury()).toEqual([6, 2400, 2394]);

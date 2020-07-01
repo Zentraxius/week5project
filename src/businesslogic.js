@@ -18,11 +18,9 @@ export class Age {
   }
 
   earthToJupiter() {
-    let jupiterResult = [];
-    jupiterResult.push(Math.round(this.age / 11.86));
-    jupiterResult.push(Math.round(this.expectancy / 11.86));
-    jupiterResult.push(jupiterResult[1] - jupiterResult[0]);
-    return jupiterResult;
+    this.age = (Math.round(this.age / 11.86));
+    this.expectancy = (Math.round(this.expectancy / 11.86));
+    this.difference = this.expectancy - this.age;
   }
 
   earthToMercury() {
