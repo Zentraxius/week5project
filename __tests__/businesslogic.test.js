@@ -21,7 +21,7 @@ describe("Age", () => {
     expect(reuseableAgeYoung.age).toEqual(13);
     expect(reuseableAgeYoung.expectancy).toEqual(5319);
     expect(reuseableAgeYoung.difference).toEqual(5306);
-    //
+    
     reuseableAgeOld.earthToMars();
     expect(reuseableAgeOld.age).toEqual(13298);
     expect(reuseableAgeOld.expectancy).toEqual(5319);
@@ -35,7 +35,7 @@ describe("Age", () => {
     expect(reuseableAgeYoung.age).toEqual(40);
     expect(reuseableAgeYoung.expectancy).toEqual(16129);
     expect(reuseableAgeYoung.difference).toEqual(16089);
-    //
+    
     reuseableAgeOld.earthToVenus();
     expect(reuseableAgeOld.age).toEqual(40323);
     expect(reuseableAgeOld.expectancy).toEqual(16129);
@@ -49,7 +49,7 @@ describe("Age", () => {
     expect(reuseableAgeYoung.age).toEqual(2);
     expect(reuseableAgeYoung.expectancy).toEqual(843);
     expect(reuseableAgeYoung.difference).toEqual(841);
-    //
+    
     reuseableAgeOld.earthToJupiter();
     expect(reuseableAgeOld.age).toEqual(2108);
     expect(reuseableAgeOld.expectancy).toEqual(843);
@@ -63,7 +63,7 @@ describe("Age", () => {
     expect(reuseableAgeYoung.age).toEqual(104);
     expect(reuseableAgeYoung.expectancy).toEqual(41667);
     expect(reuseableAgeYoung.difference).toEqual(41563);
-    //
+    
     reuseableAgeOld.earthToMercury();
     expect(reuseableAgeOld.age).toEqual(104167);
     expect(reuseableAgeOld.expectancy).toEqual(41667);
