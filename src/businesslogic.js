@@ -8,6 +8,9 @@ export class Age {
   earthToMars() {
     this.age = (Math.round(this.age / 1.88));
     this.expectancy = (Math.round(this.expectancy / 1.88));
+    if ((this.expectancy - this.age) < 1) {
+      this.difference = Math.abs(this.expectancy -this.age)
+    }
     this.difference = this.expectancy - this.age;
   }
 
