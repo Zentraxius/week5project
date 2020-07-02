@@ -25,7 +25,7 @@ describe("Age", () => {
     reuseableAgeOld.earthToMars();
     expect(reuseableAgeOld.age).toEqual(13298);
     expect(reuseableAgeOld.expectancy).toEqual(5319);
-    expect(reuseableAgeOld.difference).toEqual(-7979);
+    expect(reuseableAgeOld.difference).toEqual("You have exceeded your lifespan by 7979 years!");
   });
 
   // test("Should determine age, expectancy, and difference between them on Venus", () => {
@@ -63,4 +63,4 @@ describe("Age", () => {
   //   expect(reuseableAgeOld.expectancy).toEqual(5319);
   //   expect(reuseableAgeOld.difference).toEqual(-7979);
   });
-});
+

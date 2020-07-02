@@ -9,9 +9,10 @@ export class Age {
     this.age = (Math.round(this.age / 1.88));
     this.expectancy = (Math.round(this.expectancy / 1.88));
     if ((this.expectancy - this.age) < 1) {
-      this.difference = Math.abs(this.expectancy -this.age)
+      this.difference = "You have exceeded your lifespan by " + Math.abs(this.expectancy - this.age) + " years!"
+    } else {
+      this.difference = this.expectancy - this.age;
     }
-    this.difference = this.expectancy - this.age;
   }
 
   earthToVenus() {
