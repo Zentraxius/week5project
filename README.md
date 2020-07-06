@@ -26,7 +26,7 @@ User inputs age (Will use 25 for testing purposes, all rounded to nearest whole 
 
 **Example**
 |Behavior|Input|Output|Difference|
-|---|---|---|---|---|
+|---|---|---|---|
 |Determines users Age on Mars|25|13,5319|5306|
 |Calculates the users life expectancy on Mars based on their Age and Life Expectancy|Age 25, Expectancy 10,000|Age 13, Expectancy 5319|5306 (Expectancy-Age) to go|
 
