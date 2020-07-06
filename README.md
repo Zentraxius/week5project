@@ -25,11 +25,10 @@ User inputs age (Will use 25 for testing purposes, all rounded to nearest whole 
 7. When step 6 is complete, shows difference between current lifespan and expected lifespan
 
 **Example**
-|Behavior|Input|OutputAge|OutputExpectancy|OutputDifference|
-
-Mars|25|13|5319|5306|
-Here we can see the expected results of a 25 year old inputting their age.
-On Mars, a 25 year old with a life expectancy of 10,000 years would get the results of 13(current age), 5319(expected age), and 5306(difference between the 2)
+|Behavior|Input|Output|Difference|
+|---|---|---|---|---|
+|Determines users Age on Mars|25|13,5319|5306|
+|Calculates the users life expectancy on Mars based on their Age and Life Expectancy|Age 25, Expectancy 10,000|Age 13, Expectancy 5319|5306 (Expectancy-Age) to go|
 
 **U.S average life expectancy is 78.6, will use 10000 as expectancy as we are estimating the life of space elves**
 
