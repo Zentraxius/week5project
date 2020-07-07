@@ -27,9 +27,11 @@ User inputs age (Will use 25 for testing purposes, all rounded to nearest whole 
 **Example**
 |Behavior|Input|Output|Difference|
 |---|---|---|---|
-|Determines users Age on Mars|25|13,5319|5306|
-|Calculates the users life expectancy on Mars based on their Age and Life Expectancy|Age 25, Expectancy 10,000|Age 13, Expectancy 5319|5306 (Expectancy-Age) to go|
-
+|Determines users Age on Mars|25, 10000|13, 5319|5306|
+|Calculates the users life Expectancy on Mars based on their Age and Life Expectancy|Age 25, Expectancy 10,000|Age 13, Expectancy 5319|5306 (Expectancy-Age) to go|
+|||||
+|Determines users Age on Venus|25000, 10000|40323, 16129|-24194|
+|Calculates users life Expectancy on Venus using a greater than expectancy input|Age 25,000, Expectancy 10,000|Age 40323, Expectancy 16129| Expectancy -24194, returns message stating they have exceeded their lifespan by 24194 years.|
 **U.S average life expectancy is 78.6, will use 10000 as expectancy as we are estimating the life of space elves**
 
 If user inputs their age, they will also get their life expectancy returned (on Earth, age 41, life expectancy 79, estimated remainder 38)
